@@ -22,6 +22,11 @@ fn_pp_excel="./micorarray_clean_data.csv"
 # ITMpath="/Users/cheny39/Documents/GitHub/tmp/cedcd_affected_clean_data.csv"
 # fn_pp_excel="/Users/cheny39/Documents/GitHub/tmp/cedcd_clean_data.csv"
 
+
+# getTestCasesDetails_file="/Users/cheny39/Documents/tmp/tmp.csv"
+# ITMpath="/Users/cheny39/Documents/tmp/tmp_affacted.csv"
+# fn_pp_excel="/Users/cheny39/Documents/tmp/tmp.csv"
+
 total_number_ppi =0
 
 total_number_fn =0
@@ -113,6 +118,26 @@ def getTestCasesDetails():
     #get ITM csv file
     details_testsuit ={}
     with open(getTestCasesDetails_file, "r+") as files:
+        reader = csv.reader(files)
+        for row in reader:
+            #find testcase in dic add ppi and pp
+            if row[2] not in details_testsuit:
+                details_testsuit[row[2]] = {
+                         'ppi': [],
+                         'fn': [],
+                         'affected_fn': [],
+                         'affected_ppi': []
+                }
+
+            details_testsuit[row[2]]['ppi'].append(row[1]+"."+row[0]+"&ppi&"+row[3])
+            details_testsuit[row[2]]['fn'].append(row[1]+"."+row[0])
+    return details_testsuit
+
+
+def getTestCasesDetailsFromITM():
+    #get ITM csv file
+    details_testsuit ={}
+    with open(fn_pp_excel, "r+") as files:
         reader = csv.reader(files)
         for row in reader:
             #find testcase in dic add ppi and pp

@@ -8,6 +8,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 #data_path  = "/Users/cheny39/Documents/GitHub/tmp/cedcd.csv"
 #
 data_path  = "./micorarray-og.csv"
+# data_path="/Users/cheny39/Documents/tmp/tmp.csv"
 
 def getProgramPoints(path):
     pp = set()
@@ -78,4 +79,4 @@ if __name__ == '__main__':
     print("program ppi")
     print(ppi)
 
-    #generateITM(data_path,ppi,pp,testsuit)
+    generateITM(data_path,ppi,pp,testsuit)

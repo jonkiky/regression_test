@@ -137,6 +137,29 @@ def getTestCasesDetails():
     return details_testsuit
 
 
+def getTestCasesDetailsFromITM():
+    #get ITM csv file
+    # get ITM csv file
+    details_testsuit = {}
+    with open(fn_pp_excel, "r+") as files:
+        reader = csv.reader(files)
+        header= next(reader)
+        for row in reader:
+            for col in range(len(header)):
+                if(row[col]=='1'):
+                    if header[col] not in details_testsuit:
+                        details_testsuit[header[col]]= {
+                            'ppi': [],
+                            'fn': [],
+                            'affected_fn': [],
+                            'affected_ppi': []
+                        }
+                    #find testcase in dic add ppi and pp
+                    details_testsuit[header[col]]['ppi'].append(row[0]+"&ppi&"+row[1])
+                    details_testsuit[header[col]]['fn'].append(row[0])
+    return details_testsuit
+
+
 def getTestCasesAffectDetails(details_testsuit):
     #get ITM csv file
     with open(affected_ITM, "r+") as files:
@@ -260,7 +283,8 @@ if __name__ == '__main__':
     affected_pp = set()
     affected_pp = getAffectedFunctions();
 
-    details_testsuit = getTestCasesDetails()
+    #details_testsuit = getTestCasesDetails()
+    details_testsuit =getTestCasesDetailsFromITM()
     details_testsuit = getTestCasesAffectDetails(details_testsuit)
 
 

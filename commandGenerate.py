@@ -590,16 +590,17 @@ for name in array3:
 array4=["test.daikon.StringUtilsTrimEmptyTest"]
 
 for name in array4:
-
-    baseCommand = "java  -Xmx4g -cp "
-    baseCommand = baseCommand +"/Users/cheny39/Documents/Regression_daikon/source/commons-lang-LANG_3_0/target/test-classes/*:"
-    baseCommand = baseCommand + "/Users/cheny39/Documents/Regression_daikon/source/commons-lang-LANG_3_0/target/lasses/*:"
+    '''
+    /Library/Java/JavaVirtualMachines/jdk-11.0.7.jdk/Contents/Home/bin/java -classpath /Users/cheny39/Documents/Regression_daikon/source/commons-lang-LANG_3_0/target/test-classes:/Users/cheny39/Documents/Regression_daikon/source/commons-lang-LANG_3_0/target/classes:/Users/cheny39/.m2/repository/junit/junit/4.7/junit-4.7.jar:/Users/cheny39/.m2/repository/org/easymock/easymock/2.5.2/easymock-2.5.2.jar test.daikon.StringUtilsTrimEmptyTest
+    '''
+    baseCommand = " /Library/Java/JavaVirtualMachines/jdk-11.0.7.jdk/Contents/Home/bin/java -Xmx4g  -classpath  "
+    baseCommand = baseCommand +"/Users/cheny39/Documents/Regression_daikon/source/commons-lang-LANG_3_0/target/test-classes:/Users/cheny39/Documents/Regression_daikon/source/commons-lang-LANG_3_0/target/classes:/Users/cheny39/.m2/repository/junit/junit/4.7/junit-4.7.jar:/Users/cheny39/.m2/repository/org/easymock/easymock/2.5.2/easymock-2.5.2.jar:"
     baseCommand = baseCommand + "/Users/cheny39/Documents/Regression_daikon/lib/*:."
     baseCommand = baseCommand +" daikon.Chicory " \
                                " --dtrace-file=\""+name[name.rindex(".")+1:len(name)]+".dtrace.gz\" "
     baseCommand = baseCommand +name
-    baseCommand = baseCommand +"&&java  -Xmx4g -cp /Users/cheny39/Documents/Regression_daikon/lib/daikon.jar; daikon.Daikon " +name[name.rindex(".")+1:len(name)]+".dtrace.gz"
-    baseCommand = baseCommand +"&&java  -Xmx4g -cp /Users/cheny39/Documents/Regression_daikon/lib/daikon.jar; daikon.PrintInvariants  "+name[name.rindex(".")+1:len(name)]+".inv.gz>>"
+    baseCommand = baseCommand +"&&java  -Xmx4g -cp /Users/cheny39/Documents/Regression_daikon/lib/daikon.jar daikon.Daikon " +name[name.rindex(".")+1:len(name)]+".dtrace.gz"
+    baseCommand = baseCommand +"&&java  -Xmx4g -cp /Users/cheny39/Documents/Regression_daikon/lib/daikon.jar daikon.PrintInvariants  "+name[name.rindex(".")+1:len(name)]+".inv.gz>>"
     baseCommand = baseCommand +name[name.rindex(".")+1:len(name)]+".txt"
     print ("\n")
     print (baseCommand)

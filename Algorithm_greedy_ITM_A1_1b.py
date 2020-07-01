@@ -4,7 +4,8 @@ import csv
 import re
 import os
 import math
-from clean_data import *
+from clean_data_itm import *
+
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 #global var
@@ -13,9 +14,9 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 #fn_pp_excel="./clean_data3.csv"
 #
-getTestCasesDetails_file="./micorarray.csv"
-ITMpath="./micorarray_affected_clean_data.csv"
-fn_pp_excel="./micorarray_clean_data.csv"
+getTestCasesDetails_file="./monitor_c.csv"
+ITMpath="./itm_affect_data.csv"
+fn_pp_excel="./itm_clean_data.csv"
 # #
 
 # getTestCasesDetails_file="/Users/cheny39/Documents/GitHub/tmp/cedcd_c.csv"
@@ -80,7 +81,7 @@ def RiskFunction(selection,details_testsuit,affected_ppi,affected_pp):
     # alg 1a
     #score = uncovered_affected_inv_score +uncovered_affected_fn_score
     # alg 1b
-    #score = uncovered_affected_inv_score +uncovered_affected_fn_score +uncovered_fn_score
+    score = uncovered_affected_inv_score +uncovered_affected_fn_score +uncovered_fn_score
     # alg 1c
     #score = uncovered_affected_inv_score + uncovered_affected_fn_score + uncovered_inv_score
 
@@ -117,7 +118,7 @@ def ObjectFucntion(selection,tc,details_testsuit,affected_ppi,affected_pp):
 def getTestCasesDetails():
     #get ITM csv file
     details_testsuit ={}
-    with open(getTestCasesDetails_file, "r+") as files:
+    with open(getTestCasesDetails_file, "r+",encoding="utf8", errors='ignore') as files:
         reader = csv.reader(files)
         for row in reader:
             #find testcase in dic add ppi and pp
@@ -137,7 +138,7 @@ def getTestCasesDetails():
 def getTestCasesDetailsFromITM():
     #get ITM csv file
     details_testsuit ={}
-    with open(fn_pp_excel, "r+") as files:
+    with open(fn_pp_excel, "r+",encoding="utf8", errors='ignore') as files:
         reader = csv.reader(files)
         for row in reader:
             #find testcase in dic add ppi and pp
@@ -156,7 +157,7 @@ def getTestCasesDetailsFromITM():
 
 def getTestCasesAffectDetails(details_testsuit):
     #get ITM csv file
-    with open(ITMpath, "r+") as files:
+    with open(ITMpath, "r+",encoding="utf8", errors='ignore') as files:
         reader = csv.reader(files)
         header= next(reader)
         for row in reader:
@@ -171,7 +172,7 @@ def getTestCasesAffectDetails(details_testsuit):
 
 def getAffectedFunctions():
     pp = set()
-    with open(ITMpath, "r+") as files:
+    with open(ITMpath, "r+",encoding="utf8", errors='ignore') as files:
         reader = csv.reader(files)
         header = next(reader)
         for row in reader:
@@ -182,7 +183,7 @@ def getAffectedFunctions():
 
 def getAffectedInvariants():
     ppi = set()
-    with open(ITMpath, "r+") as files:
+    with open(ITMpath, "r+",encoding="utf8", errors='ignore') as files:
         reader = csv.reader(files)
         header= next(reader)
         for row in reader:
@@ -199,7 +200,7 @@ def callGraph(pp):
             "attach":set()
         }
 
-    with open(fn_pp_excel, "r+") as files:
+    with open(fn_pp_excel, "r+",encoding="utf8", errors='ignore') as files:
         reader = csv.reader(files)
         header = next(reader)
         previous_row = [0] * (len(header)-2)
@@ -222,11 +223,13 @@ def callGraph(pp):
 
 def setAffectedITM(affeced_fns,affeced_ins):
     gpp = []
-    with open(fn_pp_excel, "r+") as files:
+    with open(fn_pp_excel, "r+",encoding="utf8", errors='ignore')as files:
         reader = csv.reader(files)
         gpp.append(next(reader))
         for row in reader:
+            print(row)
             for col in range(2,len(row)):
+
                 if row[col] == "1" and (row[0] in affeced_fns) :
                     row[col] = 1
                     continue
@@ -306,9 +309,9 @@ pp = set()
 # 25
 budget =0
 
-#budgetSet = [437,874,1211,1784,2185,2622,3059,4370]
+#budgetSet = [1784,2185,2622,3059,4370]
 
-budgetSet = [1505,3010,4515,6020,7525,9030,10204,15050]
+budgetSet = [1505]
 
 #budgetSet=[15050]
 
@@ -321,7 +324,7 @@ if __name__ == '__main__':
     for i in range(len(budgetSet)):
         budget = budgetSet[i]
 
-
+        setAffectedITM([],["Note_title","note_content"])
         #setAffectedITM(["PUGTable.js.render"], ["api/analysis/runContrast","pathways_up"])
 
         #setAffectedITM(["PDGTable.js.render"], ["api/analysis/runContrast","pathways_up"])
@@ -331,7 +334,9 @@ if __name__ == '__main__':
 
         #setAffectedITM([""], ["No Cancer"])
         #
-        setAffectedITM([""],["./api/cohort/select","this.state.filter","filter"])
+        #setAffectedITM([""],["./api/cohort/select","this.state.filter","filter"])
+
+
 
         pp = getProgramPoints(data_path) # this is og
         total_number_fn =len(pp)

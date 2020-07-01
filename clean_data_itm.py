@@ -8,13 +8,13 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 #data_path  = "/Users/cheny39/Documents/GitHub/tmp/cedcd.csv"
 #
 #data_path  = "./monitor.csv"
-data_path = "./micorarray-og.csv"
-#data_path ="./cedcd.csv"
+#data_path = "./micorarray-og.csv"
+data_path ="./monitor.csv"
 # data_path="/Users/cheny39/Documents/tmp/tmp.csv"
 
 def getProgramPoints(path):
     pp = set()
-    with open(path,"r+") as files:
+    with open(path,"r+", encoding="utf8", errors='ignore') as files:
         reader = csv.reader(files)
         for row in reader:
            pp.add(row[2]+"."+row[3])
@@ -23,7 +23,7 @@ def getProgramPoints(path):
 
 def getProgramPointsInvariant(path):
     ppi = set()
-    with open(path,"r+") as files:
+    with open(path,"r+" ,encoding="utf8", errors='ignore') as files:
         reader = csv.reader(files)
         for row in reader:
            ppi.add(row[2]+"."+row[3]+"&pp&"+row[1])
@@ -31,7 +31,7 @@ def getProgramPointsInvariant(path):
 
 def getTestSuit(path):
     pp = set()
-    with open(path,"r+") as files:
+    with open(path,"r+",encoding="utf8", errors='ignore') as files:
         reader = csv.reader(files)
         for row in reader:
            pp.add(row[5])
@@ -39,21 +39,20 @@ def getTestSuit(path):
 
 
 def generateITM(path,ppi,pp,testsuit):
-    return
     # create ITM invariant tracebility matrix
     list_ppi =  list(ppi)
     list_ts = list(testsuit)
     ITM = [0]*len(ppi)
     for i in range(len(ppi)):
         ITM[i] = [0] * len(testsuit)
-    with open(path, "r+") as files:
+    with open(path, "r+",encoding="utf8", errors='ignore') as files:
         reader = csv.reader(files)
         for row in reader:
             index_ppi = list_ppi.index(row[2]+"."+row[3]+"&pp&"+row[1])
             index_ts =list_ts.index(row[5])
             ITM[index_ppi][index_ts]=1
 
-    with open('/Users/cheny39/Documents/GitHub/tmp/micorarray_clean_data.csv', mode='w') as clean_file:
+    with open('./itm_clean_data.csv', mode='w') as clean_file:
         writer = csv.writer(clean_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         header = ["program point","program invariant"]+list_ts
         #print(header)

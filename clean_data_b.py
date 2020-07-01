@@ -9,7 +9,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 #
 #data_path  = "./monitor.csv"
 data_path = "./micorarray-og.csv"
-#data_path ="./cedcd.csv"
+# data_path ="./cedcd.csv"
 # data_path="/Users/cheny39/Documents/tmp/tmp.csv"
 
 def getProgramPoints(path):

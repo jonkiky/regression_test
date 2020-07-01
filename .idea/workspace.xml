@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8511cba5-a061-42d6-be6a-604067263754" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Classes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GenerateITM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCasesGenerator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commandGenerate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm_greedy_ITM_A1_1a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm_greedy_ITM_A1_1b.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm_greedy_ITM_A2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm_greedy_ITM_A3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm_greedy_ITM_A4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithm_greedy_ITM_A5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clean_data_itm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm2_gd.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm2_gd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm2_greedy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm2_greedy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm2_gd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm2_greedy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CEDCD_TestCase.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/CEDCD_TestCase.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/clean_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clean_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commandGenerate.py" beforeDir="false" afterPath="$PROJECT_DIR$/commandGenerate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micorarray_affected_clean_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/micorarray_affected_clean_data.csv" afterDir="false" />
     </list>
     <ignored path="RegressTest20180814.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,31 +129,36 @@
     <session id="1945731375">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="194" />
+          <entry key="py" value="383" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="194" />
+          <entry key="Python" value="383" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="codeGenerator" value="1" />
-          <entry key="py" value="28" />
+          <entry key="csv" value="1" />
+          <entry key="py" value="72" />
           <entry key="sh" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="28" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="72" />
         </counts>
       </usages-collector>
     </session>
@@ -157,14 +168,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithm2_greedy.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algorithm_gd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" selection-start-line="25" selection-start-column="2" selection-end-line="27" selection-end-column="52" />
-              <folding>
-                <element signature="e#22#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="214">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -172,47 +180,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clean_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCasesGenerator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="389" column="56" selection-start-line="389" selection-start-column="56" selection-end-line="389" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/commandGenerate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="595" column="122" lean-forward="true" selection-start-line="595" selection-start-column="122" selection-end-line="595" selection-end-column="122" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GenerateITM.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="103" column="19" lean-forward="true" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="105">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -228,11 +197,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>details_testsuit</find>
-      <find>dic_cpp</find>
-      <find>callGraph</find>
-      <find>2.1.6</find>
-      <find>2.1.7</find>
       <find>2.1.</find>
       <find>2.1.5</find>
       <find>getAffectedFunctions</find>
@@ -241,12 +205,10 @@
       <find>execution_trace_file</find>
       <find>getTestSuit</find>
       <find>risk_of_each_test</find>
-      <find>fn_pp_excel</find>
       <find>cost_of_each_test</find>
       <find>setAffect</find>
       <find>risk_ratio</find>
       <find>number_of_functions_of_each_test</find>
-      <find>setAffectedITM</find>
       <find>ITMpath</find>
       <find>getTestCasesAffectDetails</find>
       <find>getTestCasesDetails</find>
@@ -256,8 +218,15 @@
       <find>join</find>
       <find>toCSV3</find>
       <find>affected</find>
-      <find>local_in</find>
       <find>data_path</find>
+      <find>local_in</find>
+      <find>risk_score</find>
+      <find>alg</find>
+      <find>def alg</find>
+      <find>micorarray_clean_data</find>
+      <find>getProgramPoints</find>
+      <find>setAffectedITM</find>
+      <find>fn_pp_excel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -287,17 +256,28 @@
         <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/Classes.py" />
         <option value="$PROJECT_DIR$/TestCasesGenerator.py" />
-        <option value="$PROJECT_DIR$/commandGenerate.py" />
         <option value="$PROJECT_DIR$/GenerateITM.py" />
         <option value="$PROJECT_DIR$/Algorithm2_greedy.py" />
+        <option value="$PROJECT_DIR$/commandGenerate.py" />
+        <option value="$PROJECT_DIR$/Algorithm_greedy_B1.py" />
+        <option value="$PROJECT_DIR$/Algorithm_greedy_B2.py" />
+        <option value="$PROJECT_DIR$/Algorithm_greedy_C2.py" />
+        <option value="$PROJECT_DIR$/clean_data_itm.py" />
+        <option value="$PROJECT_DIR$/Algorithm_greedy_ITM_A1_1a.py" />
+        <option value="$PROJECT_DIR$/Algorithm_greedy_ITM_A1.py" />
+        <option value="$PROJECT_DIR$/Algorithm_greedy_ITM_A1_1b.py" />
+        <option value="$PROJECT_DIR$/Algorithm_greedy_A1.py" />
+        <option value="$PROJECT_DIR$/Algorithm_greedy_C1.py" />
         <option value="$PROJECT_DIR$/clean_data.py" />
+        <option value="$PROJECT_DIR$/Algorithm_gd.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="969" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="191" />
+    <option name="y" value="140" />
+    <option name="width" value="1464" />
+    <option name="height" value="835" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -339,7 +319,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.commandGenerate">
+  <component name="RunManager" selected="Python.Algorithm_gd">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -359,7 +339,7 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="Algorithm2_gd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Algorithm_gd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RegressTest20180814" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -371,7 +351,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm2_gd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm_gd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -380,7 +360,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Algorithm2_greedy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Algorithm_greedy_A1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RegressTest20180814" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -392,7 +372,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm2_greedy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm_greedy_A1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -401,7 +381,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GenerateITM" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Algorithm_greedy_C1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RegressTest20180814" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -413,7 +393,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GenerateITM.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm_greedy_C1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -422,7 +402,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TestCasesGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Algorithm_greedy_ITM_A1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RegressTest20180814" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -434,7 +414,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestCasesGenerator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm_greedy_ITM_A1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -443,7 +423,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="commandGenerate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="clean_data_itm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RegressTest20180814" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -455,7 +435,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/commandGenerate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clean_data_itm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -465,19 +445,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Algorithm2_gd" />
-      <item itemvalue="Python.TestCasesGenerator" />
-      <item itemvalue="Python.commandGenerate" />
-      <item itemvalue="Python.GenerateITM" />
-      <item itemvalue="Python.Algorithm2_greedy" />
+      <item itemvalue="Python.Algorithm_greedy_ITM_A1" />
+      <item itemvalue="Python.Algorithm_greedy_A1" />
+      <item itemvalue="Python.clean_data_itm" />
+      <item itemvalue="Python.Algorithm_greedy_C1" />
+      <item itemvalue="Python.Algorithm_gd" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.commandGenerate" />
-        <item itemvalue="Python.Algorithm2_greedy" />
-        <item itemvalue="Python.GenerateITM" />
-        <item itemvalue="Python.TestCasesGenerator" />
-        <item itemvalue="Python.Algorithm2_gd" />
+        <item itemvalue="Python.Algorithm_gd" />
+        <item itemvalue="Python.Algorithm_greedy_C1" />
+        <item itemvalue="Python.Algorithm_greedy_ITM_A1" />
+        <item itemvalue="Python.clean_data_itm" />
+        <item itemvalue="Python.Algorithm_greedy_A1" />
       </list>
     </recent_temporary>
   </component>
@@ -495,16 +475,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="969" extended-state="6" />
+    <frame x="191" y="140" width="1464" height="835" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23628692" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27165627" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.64880276" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35689852" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25408164" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5343203" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -539,9 +519,9 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/GenerateITM.py</url>
-          <line>108</line>
-          <option name="timeStamp" value="32" />
+          <url>file://$PROJECT_DIR$/Algorithm_gd.py</url>
+          <line>286</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -616,7 +596,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/experiment20170214/alg/cleanCallGraph.py" />
     <entry file="file://$PROJECT_DIR$/Algorithm2a.py" />
     <entry file="file://$PROJECT_DIR$/clean_data.csv">
       <provider selected="true" editor-type-id="text-editor" />
@@ -665,30 +644,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/RegressionTestSelection--master 2/codeGenerator">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="401" lean-forward="true" selection-end-line="401" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/RegressionTestSelection--master 2/commandGenerate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="469" column="44" lean-forward="true" selection-end-line="591" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/RegressionTestSelection--master 2/GenerateITM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="52" column="126" selection-start-line="52" selection-start-column="126" selection-end-line="52" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/RegressionTestSelection--master 2/Classes.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/RegressionTestSelection--master 2/codeGenerator" />
+    <entry file="file://$USER_HOME$/Downloads/RegressionTestSelection--master 2/commandGenerate.py" />
+    <entry file="file://$USER_HOME$/Downloads/RegressionTestSelection--master 2/GenerateITM.py" />
+    <entry file="file://$USER_HOME$/Downloads/RegressionTestSelection--master 2/Classes.py" />
     <entry file="file://$PROJECT_DIR$/test2.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -699,20 +658,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Regression_daikon/code/Alg_commandGenerate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3782">
-          <caret line="152" column="65" lean-forward="true" selection-start-line="152" selection-start-column="65" selection-end-line="152" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Regression_daikon/code/commons-lang-2.1-src_1.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Regression_daikon/code/Alg_commandGenerate.py" />
+    <entry file="file://$PROJECT_DIR$/../Regression_daikon/code/commons-lang-2.1-src_1.sh" />
     <entry file="file://$PROJECT_DIR$/Test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -720,54 +667,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm2_gd.py" />
     <entry file="file://$PROJECT_DIR$/TestCasesGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="389" column="56" selection-start-line="389" selection-start-column="56" selection-end-line="389" selection-end-column="56" />
+        <state relative-caret-position="387">
+          <caret line="401" column="36" lean-forward="true" selection-start-line="401" selection-start-column="36" selection-end-line="401" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GenerateITM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="49">
           <caret line="103" column="19" lean-forward="true" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm2_gd.py">
+    <entry file="file://$PROJECT_DIR$/Algorithm2_greedy.py" />
+    <entry file="file://$PROJECT_DIR$/commandGenerate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="10" />
-          <folding>
-            <element signature="e#22#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="769">
+          <caret line="606" column="5" selection-start-line="606" selection-start-column="5" selection-end-line="606" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clean_data.py">
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_B2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="50" />
+        <state relative-caret-position="654">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm2_greedy.py">
+    <entry file="file://$PROJECT_DIR$/itm_clean_data.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-start-column="2" selection-end-line="27" selection-end-column="52" />
+        <state relative-caret-position="367">
+          <caret line="321" selection-start-line="321" selection-end-line="321" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_ITM_A2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean_data_itm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_C2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="317" column="17" selection-start-line="317" selection-start-column="17" selection-end-line="317" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_ITM_A1_1b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2039">
+          <caret line="316" selection-start-line="316" selection-end-line="316" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_A1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1422">
+          <caret line="226" column="64" selection-start-line="226" selection-start-column="64" selection-end-line="226" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_ITM_A1_1a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2847">
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_ITM_A3.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_ITM_A4.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_ITM_A5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_ITM_A1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="313" column="17" selection-start-line="313" selection-start-column="17" selection-end-line="313" selection-end-column="17" />
           <folding>
             <element signature="e#22#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commandGenerate.py">
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_C1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="595" column="122" lean-forward="true" selection-start-line="595" selection-start-column="122" selection-end-line="595" selection-end-column="122" />
+        <state relative-caret-position="64">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_greedy_B1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="328" column="90" lean-forward="true" selection-start-line="328" selection-start-column="8" selection-end-line="328" selection-end-column="90" />
+          <folding>
+            <marker date="1593540695317" expanded="true" signature="9945:10018" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm_gd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

@@ -20,7 +20,7 @@ fn_pp_excel="./micorarray_clean_data.csv"
 
  derivative F on t : [# of fn - risk]
 
-    t(i+1) = t(i) - learning_step * [# of fn - risk]
+    t(i+1) = t(i) +  learning_step * [# of fn - risk]
 
  threshold: 0.5   - if t(i) >= 0.5 then t(i) = 1.
  learning_step : 0.632
@@ -32,7 +32,7 @@ threshold = 1
 
 learning_step = 0.632
 
-convergence = 0.08
+convergence = 0.1
 
 risk_ratio = 0.5
 
@@ -265,8 +265,8 @@ if __name__ == '__main__':
     testsuit = getTestSuit(data_path)
 
 
-    # case 2
-    setAffectedITM([""], ["./api/cohort/select", "this.state.filter", "filter"])
+    # case 1
+    setAffectedITM(["PDGTable.js.render"], ["runContrast", "pathways_up"])
 
     pp = getProgramPoints(data_path)
     total_number_fn = len(pp)
